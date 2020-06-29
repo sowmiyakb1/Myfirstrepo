@@ -1,3 +1,5 @@
+###This file is to do pop opertions in the list
+
 List1=[10,20,30,40,50,60,70]
 List1.append(80)
 List1.insert(4,100)
