@@ -1,0 +1,27 @@
+str="this is a stringAEIOU"
+vc=ac=ec=ic=oc=uc=0
+for char in str:
+  if char in "aeiouAEIOU":
+    vc+=1
+    if char=='a' or char=='A':
+      ac+=1
+    if char=='e' or char=='E':
+      ec+=1
+    if char=='i' or char=='I':
+      ic+=1
+    if char=='o' or char=='O':
+      oc+=1
+    if char=='u' or char=='U':
+      uc+=1
+
+print "Total number of ovals =",vc
+if ac!=0:
+  print "a = ",ac
+if ec!=0:
+  print "e = ",ec
+if ic!=0:
+  print "i = ",ic
+if oc!=0:
+  print "o = ",oc
+if uc!=0:
+  print "u = ",uc

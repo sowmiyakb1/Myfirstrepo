@@ -1,0 +1,9 @@
+List1=[10,20,30,40,50,60,70]
+List1.append(80)
+List1.insert(4,100)
+List1.sort()
+List1=List1[::-1]
+List1.pop()
+List1.pop()
+List1.pop()
+print List1

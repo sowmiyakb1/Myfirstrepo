@@ -1,0 +1,36 @@
+list1=[1,2,3,4,5]
+list2=[6,7,8,9]
+list3=[10,11,12,13,14,15,16]
+
+#sort the lists in desc order , to make the first two elements as the max elements
+list1.sort()
+list1=list1[::-1]
+
+list2.sort()
+list2=list2[::-1]
+
+list3.sort()
+list3=list3[::-1]
+
+#Create Maxlist by taking 2 maximum elements from each list.
+Maxlist=list1[0:2] + list2[0:2] + list3[0:2]
+
+print "Maxlist is ",Maxlist
+
+
+#average value from all the elements of Maxlist.
+total=average=0
+for i in Maxlist:
+  total+=i
+average=total/len(Maxlist)
+print "average of the Maxlist is ",average
+
+#Create Minlist by taking 2 minimum elements from each list.
+Minlist=[list1[-1],list1[-2],list2[-1],list2[-2],list3[-1],list3[-2]]
+print "Minlist is ",Minlist
+
+total=average=0
+for i in Minlist:
+  total+=i
+average=total/len(Maxlist)
+print "average of the Minlist is ",average
