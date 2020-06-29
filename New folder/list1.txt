@@ -1,0 +1,30 @@
+List1=[1,2,3,4,5,6,7]
+List2=[6,7,8,9]
+List3=[4,1,2,3]
+
+#a
+print "length of the List1 is ",len(List1)
+print "length of the List2 is ",len(List2)
+print "length of the List3 is ",len(List3)
+
+#b
+print "max and min element of List1 is ",max(List1)," and ",min(List1)," respectively"
+print "max and min element of List2 is ",max(List2)," and ",min(List2)," respectively"
+print "max and min element of List3 is ",max(List3)," and ",min(List3)," respectively"
+
+#c
+biglist=List1
+if cmp(biglist,List2)==-1:
+  biglist=List2
+if cmp(biglist,List3)==-1:
+  biglist=List3
+print "big list is ",biglist
+
+#d
+del List1[0];del List1[len(List1)-1]
+print "updated List1 is ",List1
+del List2[0];del List2[len(List2)-1]
+print "updated List2 is ",List2
+del List3[0];del List3[len(List3)-1]
+print "updated List3 is ",List3
+  
